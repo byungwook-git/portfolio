@@ -1,0 +1,69 @@
+@import "~antd/dist/antd.css";
+*,
+a {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
+}
+.header_drawer {
+  display: block;
+}
+.left_menu {
+  display: none;
+}
+.right_menu {
+  display: none;
+}
+.detail_box {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  width: 100%;
+}
+.ant-carousel .slick-dots li button {
+  background: #000000;
+  opacity: 0.4;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  opacity: 1;
+  background: #000000;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .header_drawer {
+    display: none;
+  }
+  .left_menu {
+    display: flex;
+  }
+  .right_menu {
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
